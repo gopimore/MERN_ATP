@@ -1,0 +1,77 @@
+GET http://localhost:3000/userapi/users
+
+###
+
+POST http://localhost:3000/userapi/users
+Content-Type: application/json
+
+{
+    "id":100,
+    "name":"raju",
+    "age":19
+
+}
+
+###
+
+PUT http://localhost:3000/userapi/users
+Content-Type: application/json
+
+{
+
+    "id":100,
+    "name":"anandh",
+    "age":19
+    
+}
+###
+
+GET http://localhost:3000/userapi/users/100
+
+###
+
+DELETE http://localhost:3000/userapi/users/100
+###
+
+
+GET  GET http://localhost:3000/productapi/products
+
+###
+
+GET http://localhost:3000/productapi/products-id/101
+
+###
+
+GET http://localhost:3000/productapi/products-brand/NMR
+###
+POST http://localhost:3000/productapi/product
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"mobile",
+    "price":20000,
+    "brand":"vivo"
+
+}
+
+###
+
+PUT http://127.0.0.1:3000/productapi/products
+Content-Type: application/json
+
+{
+    "productId":101,
+    "name":"mobile",
+    "price":20000,
+    "brand":"oppo"
+
+}
+
+###
+DELETE http://localhost:3000/productapi/products/101
+
+
+
+###
+
